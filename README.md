@@ -54,19 +54,6 @@ By combining an intuitive user experience with Google Gemini AI, the project aim
 
 </div>
 
-### 📊 Dashboard and Graphs
-
-Add screenshots of your actual application's dashboard, charts, skill analysis, and career roadmap here.
-
-| Dashboard | Skill Analysis |
-|---|---|
-| ![Dashboard](docs/screenshots/dashboard.png) | ![Skill Analysis](docs/screenshots/skill-analysis.png) |
-
-| Career Roadmap | Resume Assistance |
-|---|---|
-| ![Career Roadmap](docs/screenshots/career-roadmap.png) | ![Resume Assistance](docs/screenshots/resume-assistance.png) |
-
-> Replace these example image paths with screenshots that you have actually uploaded to your repository. The images will not appear until the files exist.
 
 ## 🌟 Key Features
 
