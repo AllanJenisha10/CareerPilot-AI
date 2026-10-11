@@ -32,14 +32,25 @@ By combining an intuitive user experience with Google Gemini AI, the project aim
 
 </div>
 
-## 🎬 Live Application Demo
+## 🎬 CareerPilot AI — Application Demo
 
 <div align="center">
 
-<!-- Replace this link with your deployed application URL. -->
-<a href="https://github.com/AllanJenisha10/CareerPilot-AI">
-<img src="https://img.shields.io/badge/▶%20EXPLORE%20CAREERPILOT%20AI-Open%20Project-06B6D4?style=for-the-badge" alt="Explore CareerPilot AI"/>
-</a>
+### 📊 Dashboard & Analytics
+
+![CareerPilot AI Dashboard](dashboard.png)
+
+### 🧠 Skill Analysis
+
+![CareerPilot AI Skill Analysis](skill-analysis.png)
+
+### 🗺️ Career Roadmap
+
+![CareerPilot AI Career Roadmap](career-roadmap.png)
+
+### 📄 Resume Assistance
+
+![CareerPilot AI Resume Assistance](resume-assistance.png)
 
 </div>
 
