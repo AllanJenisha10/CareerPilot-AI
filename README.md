@@ -100,6 +100,61 @@ Add screenshots of your actual application's dashboard, charts, skill analysis, 
 
 > Update this section to list only the languages, frameworks, and services confirmed in your project's configuration files.
 
+## 🎨 Brand Identity
+
+CareerPilot AI's visual identity is designed to express empowerment, innovation, clarity, transparency, and growth. Its visual language combines rich purple tones, clean typography, and a structured, technology-focused aesthetic.
+
+### 🌈 Official Colour Palette
+
+| Colour | Hex Code | Purpose |
+|---|---|---|
+| Deep Indigo | #580F69 | Primary brand colour and key accents |
+| Blackberry Purple | #370D48 | Dark backgrounds and visual depth |
+| Smoky Purple | #A375A1 | Secondary accents and supporting elements |
+| Chalk White | #F7F5F8 | Light surfaces and readable content areas |
+| Thistle Purple | #D2B9E0 | Highlights and soft supporting surfaces |
+
+### ✍️ Typography
+
+- **Primary typeface — Space Grotesk:** Used for brand headings, page titles, and prominent visual elements.
+- **Secondary typeface — DM Sans:** Used for body text, navigation, forms, buttons, and supporting content.
+
+Use these typefaces consistently across the application's interface and brand materials.
+
+### 🎯 Brand Purpose
+
+CareerPilot AI is an AI-powered career guidance platform designed for college students and young graduates. It aims to help users discover their strengths, interests, and skills, explore suitable career paths, identify skill gaps, and create personalized career roadmaps. The platform also aims to support internship and job discovery and skill development.
+
+**Brand tagline:** “Navigate Your Career. Shape Your Future.”
+
+### 💜 Brand Values
+
+- **Empowerment:** Help users take ownership of their career journeys.
+- **Innovation:** Use AI to support modern career exploration.
+- **Clarity:** Present career information in an understandable way.
+- **Transparency:** Communicate recommendations and limitations honestly.
+- **Growth:** Encourage continuous learning and professional development.
+
+### 🗣️ Brand Voice
+
+The CareerPilot AI voice is encouraging, clear, empowering, growth-oriented, and authoritative. Communication should be supportive and actionable without making unrealistic promises about career outcomes.
+
+### 🖼️ Visual Direction
+
+- Tech-forward precision
+- Human-centric guidance
+- Futuristic clarity
+- Structured minimalism
+- Empowered growth
+
+### 📊 Charts and Visualisation
+
+Use the official purple palette consistently in dashboard charts and skill visualisations. Maintain sufficient contrast, clear labels, and readable legends. Use chart colours to communicate meaning rather than decoration, and ensure graphs represent actual application data.
+
+### 📐 Logo Guidelines
+
+Use the official CareerPilot AI logo without stretching or distorting it. Maintain clear space around the logo, preserve its legibility, and respect the brand book's minimum-size guidance when using it in the application or marketing materials.
+
 ## 🎯 Project Objectives
 
 - Make career guidance more accessible.
