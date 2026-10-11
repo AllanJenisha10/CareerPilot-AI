@@ -1,0 +1,6 @@
+{
+  "name": "CareerPilot AI",
+  "description": "Comprehensive career guidance, skills gap analysis, tailored learning roadmaps, and ATS resume intelligence for students and job seekers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

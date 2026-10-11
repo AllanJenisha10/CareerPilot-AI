@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAFD" />
+      <stop offset="100%" stop-color="#F7F2F9" />
+    </linearGradient>
+
+    <!-- Main Crescent Gradient (Dark rich purple to violet) -->
+    <linearGradient id="crescentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#420C54" />
+      <stop offset="40%" stop-color="#580F69" />
+      <stop offset="80%" stop-color="#370D48" />
+      <stop offset="100%" stop-color="#22042E" />
+    </linearGradient>
+
+    <!-- 3D Bevel Highlight Gradient for Crescent Bottom -->
+    <linearGradient id="crescentBevel" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B977CE" />
+      <stop offset="45%" stop-color="#8E32A4" />
+      <stop offset="100%" stop-color="#480C5C" />
+    </linearGradient>
+
+    <!-- Arrow Left Wing Gradient (Darker shadow side) -->
+    <linearGradient id="arrowLeftGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#380A48" />
+      <stop offset="100%" stop-color="#551268" />
+    </linearGradient>
+
+    <!-- Arrow Right Wing Gradient (Lighter highlight side) -->
+    <linearGradient id="arrowRightGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6B1C82" />
+      <stop offset="100%" stop-color="#933BB0" />
+    </linearGradient>
+
+    <!-- Orbit Swoosh Gradient -->
+    <linearGradient id="orbitGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#7D1F99" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#C89FE0" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#EBDCF5" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Sparkle Star Gradient -->
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A84BC6" />
+      <stop offset="100%" stop-color="#63157B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Clean Off-White Background -->
+  <rect width="1000" height="1000" fill="url(#bgGradient)" />
+
+  <!-- EMBLEM GROUP (Centered at X=500, Y=380) -->
+  <g id="emblem">
+    <!-- Orbit Ribbon: Rear Loop -->
+    <path d="M 380 470 C 270 450 260 380 340 330 C 440 270 650 310 700 370 C 730 405 710 440 650 460 C 600 475 520 470 450 450"
+          fill="none"
+          stroke="#D0AEE4"
+          stroke-width="16"
+          stroke-linecap="round"
+          opacity="0.65" />
+
+    <!-- Main Outer C Body -->
+    <path d="M 610 240
+             C 545 200 460 210 395 255
+             C 315 310 280 415 315 510
+             C 345 590 430 650 525 650
+             C 580 650 635 625 675 580
+             C 690 562 675 540 650 540
+             C 595 540 540 500 505 450
+             C 475 405 480 350 515 305
+             C 540 275 580 260 620 275
+             C 635 280 645 260 635 248
+             Z"
+          fill="url(#crescentGrad)" />
+
+    <!-- 3D Lower-Right Bevel Facet on C (Recreates the dimensional light wrap) -->
+    <path d="M 425 610
+             C 460 635 500 650 545 650
+             C 610 650 660 615 690 560
+             C 695 550 685 540 670 540
+             C 620 540 575 575 505 570
+             C 465 565 440 550 415 530
+             Z"
+          fill="url(#crescentBevel)" />
+
+    <!-- Orbit Ribbon: Foreground Loop (Sweeps over front-left of the C) -->
+    <path d="M 260 440
+             C 270 475 320 488 385 485
+             C 470 480 570 435 635 390
+             C 665 370 690 340 680 315
+             C 670 295 640 295 600 315"
+          fill="none"
+          stroke="url(#orbitGrad)"
+          stroke-width="22"
+          stroke-linecap="round" />
+
+    <!-- Inner Compass Rocket / Arrow (Center Core) -->
+    <!-- Left Wing (Darker) -->
+    <polygon points="600,310 460,390 525,405 520,470" fill="url(#arrowLeftGrad)" />
+    
+    <!-- Right Wing (Lighter Magenta Highlight) -->
+    <polygon points="600,310 525,405 520,470 630,420" fill="url(#arrowRightGrad)" />
+
+    <!-- Center Spine Crease Line -->
+    <line x1="600" y1="310" x2="525" y2="405" stroke="#872A9D" stroke-width="2" />
+
+    <!-- Four-Pointed Sparkle Star (Top-Right) -->
+    <path d="M 675 215
+             Q 675 245 705 245
+             Q 675 245 675 275
+             Q 675 245 645 245
+             Q 675 245 675 215 Z"
+          fill="url(#starGrad)" />
+    <circle cx="675" cy="245" r="2.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- TYPOGRAPHY SECTION -->
+  <g id="wordmark" text-anchor="middle">
+    <!-- Main Brand Title: CareerPilot AI -->
+    <text x="500" y="700" font-family="'Liberation Sans', 'DejaVu Sans', 'FreeSans', system-ui, -apple-system, sans-serif" font-size="68" font-weight="800" letter-spacing="-0.5">
+      <tspan fill="#22062D">Career</tspan><tspan fill="#6A1881">Pilot</tspan><tspan fill="#22062D"> AI</tspan>
+    </text>
+
+    <!-- Tagline: Navigate Your Career. Shape Your Future. -->
+    <text x="500" y="765" font-family="'Liberation Sans', 'DejaVu Sans', 'FreeSans', system-ui, -apple-system, sans-serif" font-size="24" font-weight="500" fill="#3F174C" letter-spacing="4">
+      Navigate Your Career. Shape Your Future.
+    </text>
+  </g>
+</svg>

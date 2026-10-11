@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-indigo: #580F69;
+  --color-brand-blackberry: #370D48;
+  --color-brand-smoky: #A375A1;
+  --color-brand-chalk: #F7F5F8;
+  --color-brand-thistle: #D2B9E0;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --indigo: #580F69;
+  --blackberry: #370D48;
+  --smoky: #A375A1;
+  --chalk: #F7F5F8;
+  --thistle: #D2B9E0;
+}
+
+/* Candidate Cockpit Card Entrance Transitions */
+.cockpit-card-entrance {
+  transition: opacity 650ms cubic-bezier(0.16, 1, 0.3, 1),
+              transform 650ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 250ms ease,
+              border-color 250ms ease;
+  will-change: opacity, transform;
+}
+
+.cockpit-card-hidden {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.cockpit-card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessible focus outline */
+*:focus-visible {
+  outline: 2px solid #580F69;
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Clean dedicated print styling for Resume and Reports */
+@media print {
+  /* Hide all non-resume application elements */
+  header,
+  footer,
+  nav,
+  aside,
+  .no-print,
+  [role="dialog"],
+  [role="alert"],
+  .toast-container {
+    display: none !important;
+  }
+
+  /* Reset document root, body, and background for pure white print paper */
+  html,
+  body,
+  #root {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Standard page margins for Chrome, Edge, Safari, Firefox and PDF export */
+  @page {
+    size: letter portrait;
+    margin: 12mm 15mm 15mm 15mm;
+  }
+
+  /* Reset application main wrapper and layout containers */
+  #main-content {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  /* Force display of the resume preview column even if editor tab was selected */
+  .resume-print-column {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: auto !important;
+  }
+
+  .resume-print-card {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    width: 100% !important;
+  }
+
+  #ats-resume-print-area,
+  .resume-sheet {
+    display: block !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  /* Resume typography and headings */
+  .resume-sheet h1 {
+    font-size: 20pt !important;
+    margin-bottom: 4pt !important;
+    color: #111827 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .resume-sheet h2 {
+    font-size: 10.5pt !important;
+    font-weight: 800 !important;
+    color: #111827 !important;
+    border-bottom: 1.5px solid #111827 !important;
+    padding-bottom: 2pt !important;
+    margin-top: 10pt !important;
+    margin-bottom: 4pt !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .resume-sheet p,
+  .resume-sheet li,
+  .resume-sheet span,
+  .resume-sheet div {
+    color: #1f2937 !important;
+  }
+
+  .resume-sheet strong {
+    color: #111827 !important;
+  }
+
+  /* Keep experience and project entries from breaking awkwardly across page borders */
+  .resume-entry-block {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 8pt !important;
+  }
+
+  .resume-sheet ul {
+    margin-top: 2pt !important;
+    margin-bottom: 4pt !important;
+  }
+
+  .resume-sheet li {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 2pt !important;
+  }
+
+  /* Ensure links are clean and dark without default browser link blue */
+  .resume-sheet a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+}
